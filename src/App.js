@@ -3,13 +3,19 @@ import './shared/styles/styles.scss';
 import Navbar from './modules/Navbar/Navbar.jsx';
 
 import navbarMenuItems from "./data/navbarMenuItems.json"
+import ToggleButton from './shared/components/ToggleButton/ToggleButton';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello react</h1>
+    <>
       <Navbar menuItems={navbarMenuItems} />
-    </div>
+      <div className='container'>
+        <ToggleButton text='Click me'/>
+      </div>
+  
+    </>
   );
 }
 
