@@ -16,4 +16,7 @@
         margin-top: 10px;
     } 
     cursor: pointer;
+    &.active {
+        font-weight: 600;
+    }
 }
