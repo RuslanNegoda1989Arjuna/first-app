@@ -8,6 +8,7 @@ import Vote from "./modules/Vote/Vote"
 import AccordionItem from './modules/AccordionItem/AccordionItem';
 import ModuleFaq from './modules/ModuleFaq/ModuleFaq';
 import GoodsList from './modules/GoodsList/GoodsList';
+import TabList from './modules/TabList/TabList';
 
 
 
@@ -20,7 +21,8 @@ function App() {
         <Vote /> */}
         <AccordionItem />
         {/* <ModuleFaq/> */}
-        <GoodsList/>
+        {/* <GoodsList/> */}
+        <TabList/>
   
       </div>
       

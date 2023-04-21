@@ -6,8 +6,6 @@ const AccordionItem = () => {
     const handleClick = (e) => {
         setIsExtanded(!isExpanded);
     }
-
-    console.log(styles.isexpanded);
     return (
     <div className={styles.container}>
         <div className={styles.accordion}>
