@@ -6,6 +6,8 @@ import styles from './tabList.module.scss';
 const TabList = () => {
   const [isActive, setIsActive] = useState(1);
 
+  // const filteredData = tabLost.find((item) => item.id === id);
+
     return (
         <div className={styles.tabs}>            
         <ul className={styles.captions}>
@@ -33,3 +35,11 @@ const TabList = () => {
 }
 
 export default TabList
+
+//  {filteredData && (
+//         <div className={`${styles.tabsContent} ${styles.active}`}>
+//           {Object.values(filteredData.paragraph).map((text, index) => (
+//             <p className={styles.paragr} key={index}>{text}</p>
+//           ))}                                   
+//         </div>
+//       )}
