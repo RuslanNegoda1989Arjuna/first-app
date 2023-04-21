@@ -4,25 +4,30 @@ import tabLost from "../../data/tabList.json";
 import styles from './tabList.module.scss';
 
 const TabList = () => {
-    const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(1);
 
     return (
-        <div className={styles.tabs}>
+        <div className={styles.tabs}>            
+        <ul className={styles.captions}>
+          {tabLost.map(({ id, title }) => {
+            const fullClassName = isActive === id ? `${styles.title} ${styles.active}` : styles.title
+            return (
+              <li className={fullClassName} key={id} onClick={() => setIsActive(id)}>
+              {title}
+            </li>)
+          })}
+        </ul>
+        {tabLost.map(({ id, paragraph }) => {
+          
+            return (
+              <div key={id} className={`${styles.tabsContent} ${styles.active}`}>
+                {Object.values(paragraph).map((text, index) => {
+                  return(<p className={styles.paragr} key={index}>{text}</p>) 
+                })  }                                   
+              </div>
+              )
             
-            <ul className="tabs__caption">
-              <li className="active">Первая вкладка</li>
-              <li>Вторая вкладка</li>
-              <li>Третья вкладка</li>
-              <li>Четвертая вкладка</li>
-            </ul>
-
-            <div className="tabs__content  active">
-              <p>Локаята принимает во внимание онтологический закон исключённого третьего, открывая новые горизонты. Идеи гедонизма занимают центральное место в утилитаризме Милля и Бентама, однако гегельянство поразительно. Отношение к современности амбивалентно
-                творит интеллект, изменяя привычную реальность.</p>
-              <p>Апостериори, созерцание понимает под собой позитивизм, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Закон исключённого третьего, следовательно, абстрактен. Катарсис рефлектирует
-                трагический знак, открывая новые горизонты.</p>
-            </div>
-
+          })}
         </div>
 )
 }
