@@ -26,14 +26,10 @@ const ModuleFaq = () => {
                                     <p className={`${styles.paragraf} ${toggleBtn ? styles.isexpanded : ''}`}>{content}</p>
                                 </div>
                             </div>
-
                         </li>
                     )
                 })}
-            </ul>
-            
-            
-            
+            </ul>            
     </div>
     )
 }

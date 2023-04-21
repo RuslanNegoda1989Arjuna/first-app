@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+.container {
+    min-height: 100%;
+    padding: 30px;
+    font-family: 'PT Sans';
+    text-align: center;
+}
+
+.item {
+    padding: 10px;
+    border: 1px solid rgb(0, 106, 255);
+    border-radius: 10px;
+    & ~ & {
+        margin-top: 10px;
+    } 
+    cursor: pointer;
+}

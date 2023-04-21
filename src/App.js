@@ -7,6 +7,7 @@ import ToggleButton from './shared/components/ToggleButton/ToggleButton';
 import Vote from "./modules/Vote/Vote"
 import AccordionItem from './modules/AccordionItem/AccordionItem';
 import ModuleFaq from './modules/ModuleFaq/ModuleFaq';
+import GoodsList from './modules/GoodsList/GoodsList';
 
 
 
@@ -18,7 +19,8 @@ function App() {
         {/* <ToggleButton text='Click me' />
         <Vote /> */}
         <AccordionItem />
-        <ModuleFaq/>
+        {/* <ModuleFaq/> */}
+        <GoodsList/>
   
       </div>
       
