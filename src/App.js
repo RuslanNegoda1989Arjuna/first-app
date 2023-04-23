@@ -9,6 +9,7 @@ import AccordionItem from './modules/AccordionItem/AccordionItem';
 import ModuleFaq from './modules/ModuleFaq/ModuleFaq';
 import GoodsList from './modules/GoodsList/GoodsList';
 import TabList from './modules/TabList/TabList';
+import RegisterForm from './modules/RegisterForm/RegisterForm';
 
 
 
@@ -22,7 +23,8 @@ function App() {
         <AccordionItem />
         {/* <ModuleFaq/> */}
         {/* <GoodsList/> */}
-        <TabList/>
+        {/* <TabList/> */}
+        <RegisterForm/>
   
       </div>
       
