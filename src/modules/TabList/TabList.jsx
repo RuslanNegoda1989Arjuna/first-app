@@ -7,7 +7,6 @@ const TabList = () => {
   const [isActive, setIsActive] = useState("1");
   const filteredData = tabLost.find((item) => item.id === isActive);
 
-
     return (
         <div className={styles.tabs}>            
         <ul className={styles.captions}>

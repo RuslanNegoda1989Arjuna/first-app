@@ -13,7 +13,12 @@ const validationSchema = yup.object().shape({
     .required('Password is required'),
 });
 
-const RegisterForm = () => {  
+const RegisterForm = ({ onClick }) => {  
+   
+     const handleSubmit = (values, { resetForm }) => {
+    onClick(values);
+    resetForm();
+  };
    return (<div className={styles.mainFormBox}>
         <h2 className={styles.title}>Registration</h2>
         <Formik
@@ -23,9 +28,7 @@ const RegisterForm = () => {
                 password: '',
                 }}
                 validationSchema={validationSchema}
-                onSubmit={values => {
-                    console.log(values)
-                }}>
+         onSubmit={handleSubmit}>
                 {({ errors, touched }) => (
                <Form className={styles.formBox}>
                    <div className={styles.fieldWrapper}>

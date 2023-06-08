@@ -6,7 +6,7 @@ const Navbar = ({menuItems}) => {
         <div className={styles.navbar}>
             <div className="container">
                 <div className={styles.navbarRow}>
-                    <a href="#">Logo</a>
+                    <a href="*">Logo</a>
                     <NavbarMenu items={menuItems} />
                     <button>To books list</button>
 
