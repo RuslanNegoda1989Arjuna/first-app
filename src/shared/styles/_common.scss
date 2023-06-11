@@ -12,13 +12,18 @@ body {
 
 .container {
     max-width: 1140px;
-    padding: 0 20px;
+    padding: 10px 20px;
     margin: 0 auto;
-    // background-color: #4d4d4d;
     &.Dark {
         background-color: #4d4d4d;
     }
     &.Sun {
         background-color: #7ab192;
     }
+}
+
+.pageTitle { 
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
 }

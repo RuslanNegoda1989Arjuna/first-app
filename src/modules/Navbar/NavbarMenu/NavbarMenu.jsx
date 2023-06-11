@@ -1,33 +1,17 @@
 
-import { Component } from "react";
 import styles from "./navbar-menu.module.scss";
-import {Link} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 
-class NavbarMenu extends Component {
-    state = {
-        activeIndex: 0,
-    }
 
-    handleClick(index) { 
-        this.setState({
-            activeIndex: index,
-        })
-    }
-    
+const  NavbarMenu = ({items}) =>  {
 
-    render() {
-        const { items } = this.props;
-        const {activeIndex} = this.state
         const elements = items.map(({ id, text, link }, index) => {
-            const fullClassName = index === activeIndex ? `${styles.link} ${styles.active}` : styles.link;
-            return (
+        return (
                 <li key={id}>
-                    <Link to={link} className={fullClassName}>{ text}</Link>
-
-                     {/* <a onClick={() => this.handleClick(index)} href={link} className={fullClassName}>{text}</a> */}
+                    <NavLink to={link} className={styles.link} >{ text}</NavLink>
                 </li>
-            )
+               )
         })
 
         return (
@@ -35,7 +19,7 @@ class NavbarMenu extends Component {
                 {elements}
             </ul>
         )
-    }
+    
 }
 
 export default NavbarMenu;

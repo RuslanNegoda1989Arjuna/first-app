@@ -11,7 +11,7 @@
     color: red;
     text-decoration: none;
 
-    &.active {
+    &:global(.active) {
         background-color: red;
         color: wheat;
     }

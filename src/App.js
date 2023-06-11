@@ -3,15 +3,12 @@ import './shared/styles/styles.scss';
 import Navbar from './modules/Navbar/Navbar.jsx';
 
 import navbarMenuItems from "./data/navbarMenuItems.json"
-// import ToggleButton from './shared/components/ToggleButton/ToggleButton';
-// import Vote from "./modules/Vote/Vote"
-import AccordionItem from './modules/AccordionItem/AccordionItem';
-// import ModuleFaq from './modules/ModuleFaq/ModuleFaq';
-// import GoodsList from './modules/GoodsList/GoodsList';
-import TabList from './modules/TabList/TabList';
-// import RegisterForm from './modules/RegisterForm/RegisterForm';
-import UserInfo from './modules/UserInfo/UserInfo';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import VoteAccordeonPage from './pages/VoteAccordeonPage/VoteAccordeonPage';
+import FaqGoodsPage from './pages/FaqGoodsPage/FaqGoodsPage';
+import TabListPage from './pages/TabListPage/TabListPage';
+import RegisterPage from './pages/RegisterPage/RegisterPage';
+
 
 
 
@@ -19,21 +16,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-         <Navbar menuItems={navbarMenuItems} />
-      <div className='container Sun'>
-        {/* <ToggleButton text='Click me' />
-        <Vote /> */}
-        <AccordionItem />
-        {/* <ModuleFaq/> */}
-        {/* <GoodsList/> */}
-        <TabList/>
-        {/* <RegisterForm /> */}
-        <UserInfo/>
-  
-      </div>
-      </BrowserRouter>
-     
-      
+        <Navbar menuItems={navbarMenuItems} />
+        <Routes>
+          <Route path='/vote' element={<VoteAccordeonPage />} />
+          <Route path='/faq' element={<FaqGoodsPage />} />
+          <Route path='/tabList' element={<TabListPage />} />
+          <Route path='/register' element={<RegisterPage/> } /> 
+        </Routes>
+      </BrowserRouter>      
     </>
   );
 }

@@ -1,17 +1,22 @@
 [
     {
         "id": "1",
-        "text": "Home page",
-        "link": "#"
+        "text": "Vote & Accordion",
+        "link": "/vote"
     },
     {
         "id": "2",
-        "text": "Books page",
-        "link": "#"
+        "text": "FAQ & Goods",
+        "link": "/faq"
     },
       {
         "id": "3",
-        "text": "Contacts page",
-        "link": "#"
+        "text": "Tab List",
+        "link": "/tabList"
+    },
+     {
+        "id": "4",
+        "text": "Register form",
+        "link": "/register"
     }
 ]
