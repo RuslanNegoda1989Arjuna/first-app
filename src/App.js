@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Navbar menuItems={navbarMenuItems} />
-      <div className='container'>
+      <div className='container Sun'>
         {/* <ToggleButton text='Click me' />
         <Vote /> */}
         <AccordionItem />

@@ -48,13 +48,7 @@ const RegisterForm = ({ onClick }) => {
                         {errors.password && touched.password ? (
                            <div className={styles.error}>{errors.password}</div>
                         ) : null}
-                   </div>
-                       
-                        
-                       
-                       
-            
-                       
+                   </div>                       
                     <button className={styles.submitBtn} type='submit'>Submit</button>
                     </Form>
             )}

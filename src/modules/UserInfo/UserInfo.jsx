@@ -14,9 +14,10 @@ const UserInfo = () => {
     }
     
     return (
-        <>
+        <div className={styles.userInfoBox}>
             <RegisterForm onClick={handlSubmit} />
-            <ul className={styles.list}>
+            {userInfo.length !== 0 && <ul className={styles.list}>
+                <h3 className={styles.titleInfo}>User Info:</h3>
                 {userInfo.map(({id, name, email}) => {
                    
                     return (<li key={id} className={styles.items}>
@@ -24,9 +25,8 @@ const UserInfo = () => {
                         <p>{email }</p>
                     </li>)
               })}  
-            </ul>
-            
-        </>
+            </ul>}
+        </div>
     )
 }
 
