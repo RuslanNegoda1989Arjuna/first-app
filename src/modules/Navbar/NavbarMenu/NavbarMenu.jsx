@@ -1,6 +1,7 @@
 
 import { Component } from "react";
 import styles from "./navbar-menu.module.scss";
+import {Link} from "react-router-dom"
 
 
 class NavbarMenu extends Component {
@@ -22,7 +23,9 @@ class NavbarMenu extends Component {
             const fullClassName = index === activeIndex ? `${styles.link} ${styles.active}` : styles.link;
             return (
                 <li key={id}>
-                     <a onClick={() => this.handleClick(index)} href={link} className={fullClassName}>{text}</a>
+                    <Link to={link} className={fullClassName}>{ text}</Link>
+
+                     {/* <a onClick={() => this.handleClick(index)} href={link} className={fullClassName}>{text}</a> */}
                 </li>
             )
         })

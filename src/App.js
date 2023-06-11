@@ -11,13 +11,15 @@ import AccordionItem from './modules/AccordionItem/AccordionItem';
 import TabList from './modules/TabList/TabList';
 // import RegisterForm from './modules/RegisterForm/RegisterForm';
 import UserInfo from './modules/UserInfo/UserInfo';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
 function App() {
   return (
     <>
-      <Navbar menuItems={navbarMenuItems} />
+      <BrowserRouter>
+         <Navbar menuItems={navbarMenuItems} />
       <div className='container Sun'>
         {/* <ToggleButton text='Click me' />
         <Vote /> */}
@@ -29,6 +31,8 @@ function App() {
         <UserInfo/>
   
       </div>
+      </BrowserRouter>
+     
       
     </>
   );
