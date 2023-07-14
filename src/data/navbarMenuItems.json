@@ -18,5 +18,10 @@
         "id": "4",
         "text": "Register form",
         "link": "/register"
+    },
+    {
+        "id": "5",
+        "text": "Shopping list",
+        "link": "/shopping_list"
     }
 ]

@@ -1,11 +1,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #1E1F28;
 
-    &Dark {
+    &.Dark {
         background-color: #4d4d4d;
     }
-    &Sun {
+    &.Sun {
         background-color: #7ab192;
     }
 }
@@ -14,6 +15,7 @@ body {
     max-width: 1140px;
     padding: 10px 20px;
     margin: 0 auto;
+    border-radius: 15px;
     &.Dark {
         background-color: #4d4d4d;
     }
