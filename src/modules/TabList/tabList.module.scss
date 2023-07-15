@@ -2,11 +2,6 @@
     padding: 7px 0;
 }
 
-
-body {
-    background: #F6F6F6;
-}
-
 .text {
     max-width: 700px;
     margin: 0 0 30px;
@@ -20,6 +15,7 @@ body {
 .tabs {
     max-width: 700px;
     margin: 0 auto;
+    
 }
 
 .captions {
@@ -109,65 +105,3 @@ body {
             display: block;
         }
 }
-
-// .vertical .tabs__caption {
-//     float: left;
-//     display: block;
-// }
-
-// .vertical .tabs__caption li {
-//     float: none;
-//     border-width: 2px 0 2px 2px;
-//     border-radius: 5px 0 0 5px;
-// }
-
-// .vertical .tabs__caption li:last-child:before {
-//     display: none;
-// }
-
-// .vertical .tabs__caption .active:after {
-//     left: auto;
-//     top: 0;
-//     right: -2px;
-//     bottom: 0;
-//     width: 2px;
-//     height: auto;
-// }
-
-// .vertical .tabs__content {
-//     overflow: hidden;
-// }
-
-// @media screen and (max-width: 650px) {
-//     .tabs__caption li {
-//         -webkit-flex: 1 0 auto;
-//         -ms-flex: 1 0 auto;
-//         flex: 1 0 auto;
-//     }
-
-//     .vertical .tabs__caption {
-//         float: none;
-//         display: -webkit-flex;
-//         display: -ms-flexbox;
-//         display: flex;
-//     }
-
-//     .vertical .tabs__caption li {
-//         border-width: 2px 2px 0;
-//         border-radius: 5px 5px 0 0;
-//     }
-
-//     .vertical .tabs__caption li:last-child:before {
-//         display: block;
-//     }
-
-//     .vertical .tabs__caption .active:after {
-//         top: auto;
-//         bottom: -5px;
-//         left: 0;
-//         right: 0;
-//         width: auto;
-//         height: 5px;
-//         background: #FFF;
-//     }
-// }
